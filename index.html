@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AztecaTech Solutions</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f8fc; color: #333; }
+    header, footer { background-color: #003366; color: white; padding: 20px; text-align: center; }
+    header img { width: 250px; margin-bottom: 1px; }
+    nav { background-color: #004080; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    .services, .testimonios { display: flex; flex-wrap: wrap; gap: 20px; }
+    .card { background: white; padding: 20px; border-radius: 10px; flex: 1 1 300px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    form { display: flex; flex-direction: column; gap: 15px; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background-color: #003366; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #004080; }
+  </style>
+</head>
+
+<!-- Botón flotante -->
+<button onclick="scrollToTop()" id="btnArriba" title="Volver arriba">⬆</button>
+
+<!-- Script -->
+<script>
+  window.onscroll = function() {
+    document.getElementById("btnArriba").style.display = (window.scrollY > 200) ? "block" : "none";
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+<!-- Estilos -->
+<style>
+  #btnArriba {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background-color: #003366;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    display: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+
+  #btnArriba:hover {
+    background-color: #004080;
+    transform: scale(1.1);
+  }
+</style>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="AztecaTech Logo">
+  
+  <p>Expertos en mantenimiento y reparación de tecnología</p>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#nosotros">Nosotros</a>
+  <a href="#precios">Precios</a>
+  <a href="#testimonios">Testimonios</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+  <h2>Bienvenido a AztecaTech Solutions</h2>
+  <p>Ofrecemos soluciones a domicilio y en nuestro centro técnico, adaptadas a tus necesidades.</p>
+</section>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Mantenimiento Preventivo, Correctivo y Redes</h3>
+      <p>Limpieza de hardware, actualización de software, mejora de rendimiento, limpiezas de cuartos de telecomunicaciones.<img src="foto1.png" alt="Mantenimiento" style="display: block; margin: 15px auto; max-width: 100%; border-radius: 8px;"></p>
+    </div>
+    <div class="card">
+      <h3>Reparación de Hardware</h3>
+      <p>Reemplazo de componentes, revisión técnica, diagnóstico completo (Gabinetes, Netbooks, Notebooks, videojuegos y dispositivos moviles).<img src="foto2.png" alt="Mantenimiento" style="display: block; margin: 15px auto; max-width: 100%; border-radius: 8px;"></p>
+    </div>
+    <div class="card">
+      <h3>Instalación de Software, videovigilancia y seguridad Informatica</h3>
+      <p>Windows, antivirus, office, creación de sistemas, instalación de camaras, recuperación y respaldo de datos, seguridad de redes estructuradas.<img src="foto3.png" alt="Mantenimiento" style="display: block; margin: 15px auto; max-width: 100%; border-radius: 8px;"></p>
+    </div>
+  <div class="card">
+    <h3>Asesoramiento y Soporte</h3>
+    <p>Asesoramiento técnico, soporte y capacitaciones.<img src="foto4.png" alt="Mantenimiento" style="display: block; margin: 15px auto; max-width: 100%; border-radius: 8px;"></p>
+  </div>
+</div>
+</div>
+</section>
+
+<section id="nosotros">
+  <h2>¿Quiénes somos?</h2>
+  <p>AztecaTech Solutions nace con el propósito de brindar un servicio confiable, rápido y de calidad para resolver cualquier problema con tu equipo de cómputo. Atendemos a domicilio y también en nuestro taller.</p>
+  <div class="Objetivos">
+    <div class="card">
+        <strong>- Objetivo General</strong>
+        <p>Brindar servicios profesionales y confiables de mantenimiento, reparación e instalación de equipos de cómputo y redes, tanto a domicilio como en taller, garantizando soluciones rápidas, eficientes y accesibles que mejoren el rendimiento y prolonguen la vida útil de los dispositivos tecnológicos de nuestros clientes.
+        </p>
+    </div>
+    <div class="card">
+        <strong>- Objetivo Especificos</strong>
+        <p><ol>
+            <li>Ofrecer diagnósticos gratuitos y personalizados para identificar con precisión los problemas técnicos de cada equipo.</li>
+            <li>Implementar procedimientos de mantenimiento preventivo y correctivo que aseguren el óptimo funcionamiento del hardware y software.</li>
+            <li>Proveer servicios de instalación y configuración de software y redes en hogares y oficinas.</li>
+            <li>Garantizar atención al cliente de calidad, con trato personalizado y seguimiento post-servicio.</li>
+            <li>Fomentar la confianza y fidelización mediante precios justos, tiempos de entrega cortos y resultados garantizados.</li>
+          </ol></p>
+    </div>
+  </div>
+    <section id="ubicacion">
+        <h2>¿Dónde estamos?</h2>
+        <p>Visítanos en nuestro taller o agenda tu cita a domicilio.</p>
+        <div style="text-align: center; margin-top: 20px;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.065936804043!2d-98.90539792409797!3d19.252461081975936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce1c182d66302f%3A0x9b470be93c990429!2sUniversidad%20Azteca!5e0!3m2!1ses-419!2smx!4v1713730000000!5m2!1ses-419!2smx" 
+            width="100%" 
+            height="350" 
+            style="border:0; border-radius: 10px; max-width: 800px;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>   
+
+
+      <section id="personal">
+        <h2>Nuestro Personal</h2>
+        <p style="text-align: center;">Conoce al equipo profesional que hace posible el servicio de calidad en AztecaTech Solutions.</p>
+        <div class="equipo">
+          <div class="tarjeta-ovalada">
+            <img src="perfil1.jpeg" alt="Juan Pérez" class="foto-circular">
+            <h3>Zuriel Gonzalez</h3>
+            <p>Nuestro Director Ejecutivo. Es la persona con el cargo más alto en AztecaTech, encargado de dirigir y tomar decisiones estratégicas importantes.</p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil2.jpg" alt="Laura Martínez" class="foto-circular">
+            <h3>Careli</h3>
+            <p>Encargada de registrar, analizar y controlar la información financiera de AztecaTech.</p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil3.jpg" alt="Laura Martínez" class="foto-circular">
+            <h3>Esau</h3>
+            <p>Encargado de registrar, analizar y controlar la información financiera de AztecaTech.</p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil4.jpeg" alt="Laura Martínez" class="foto-circular">
+            <h3>Areli Lopez</h3>
+            <p> Es parte del área RH de AztecaTech encargada de gestionar al personal.</p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil5.jpeg" alt="Laura Martínez" class="foto-circular">
+            <h3>Monse García</h3>
+            <p>Es parte del área RH de AztecaTech encargada de gestionar al personal.</p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil3.jpg" alt="Laura Martínez" class="foto-circular">
+            <h3>Oscar Soriano</h3>
+            <p>Es uno de nuestros profesionales especializado en el mantenimiento, reparación e instalación de componentes físicos de computadoras y otros dispositivos electrónicos.</p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil7.jpeg" alt="Laura Martínez" class="foto-circular">
+            <h3>Lourdes Romero</h3>
+            <p>Encargada de instalar, configurar, mantener y dar soporte a programas y sistemas operativos en computadoras y dispositivos. </p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil3.jpg" alt="Laura Martínez" class="foto-circular">
+            <h3>Jose</h3>
+            <p>Encargado de instalar, configurar, mantener y dar soporte a programas y sistemas operativos en computadoras y dispositivos. </p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil2.jpg" alt="Laura Martínez" class="foto-circular">
+            <h3>Monse Suarez</h3>
+            <p>Encargada de vender productos o servicios de AztecaTech, así como de mantener relaciones con los clientes.</p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil10.jpeg" alt="Laura Martínez" class="foto-circular">
+            <h3>Estefany Cordova</h3>
+            <p>Especialista en ayudar, orientar y resolver dudas o problemas que tienen los clientes antes, durante o después de comprar un producto o servicio en AztecaTech.</p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil11.jpeg" alt="Laura Martínez" class="foto-circular">
+            <h3>Joselin Arcos</h3>
+            <p>Especialista en ayudar, orientar y resolver dudas o problemas que tienen los clientes antes, durante o después de comprar un producto o servicio en AztecaTech.</p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil12.jpeg" alt="Esmeralda Quiroz" class="foto-circular">
+            <h3>Esmeralda Quiroz</h3>
+            <p>Responsable de planificar, coordinar y supervisar proyectos de crecimiento o innovación dentro de AztecaTech.</p>
+          </div>
+          <div class="tarjeta-ovalada">
+            <img src="perfil13.jpeg" alt="Laura Martínez" class="foto-circular">
+            <h3>Cristhian Vargas</h3>
+            <p>Nuestro profesional encargado de crear, mantener y mejorar programas y aplicaciones informáticas. Utiliza lenguajes de programación como Java, Python, JavaScript, entre otros, para construir software.</p>
+          </div>
+        </div>
+      </section>
+      
+      <style>
+        .equipo {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+          margin-top: 30px;
+        }
+      
+        .tarjeta-ovalada {
+          background: white;
+          border-radius: 50px;
+          box-shadow: 0 0 15px rgba(0,0,0,0.1);
+          padding: 30px;
+          text-align: center;
+          width: 280px;
+          transition: transform 0.3s ease;
+        }
+      
+        .tarjeta-ovalada:hover {
+          transform: scale(1.05);
+        }
+      
+        .foto-circular {
+          width: 120px;
+          height: 120px;
+          object-fit: cover;
+          border-radius: 50%;
+          margin-bottom: 15px;
+          border: 3px solid #004080;
+        }
+      
+        #personal h2 {
+          text-align: center;
+          margin-bottom: 10px;
+        }
+      </style>        
+
+
+
+</section>
+
+<section id="precios">
+  <h2>Precios</h2>
+  <ul>
+    <li>Mantenimiento básico: $300 MXN</li>
+    <li>Reparación de hardware: desde $400 MXN</li>
+    <li>Formateo e instalación: $350 MXN</li>
+    <li>Diagnóstico: ¡Gratis!</li>
+  </ul>
+</section>
+
+<section id="testimonios">
+  <h2>Testimonios</h2>
+  <div class="testimonios">
+    <div class="card">
+      <p>“Me resolvieron el problema el mismo día. Excelente atención.”</p>
+      <strong>- Ana G.</strong>
+    </div>
+    <div class="card">
+      <p>“Muy profesionales. Mi laptop quedó como nueva.”</p>
+      <strong>- Carlos M.</strong>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <form action="mailto:tucorreo@ejemplo.com" method="POST" enctype="text/plain">
+    <input type="text" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+  <p>O contáctanos por WhatsApp: <strong>+52 55 19 33 66 17</strong></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 AztecaTech Solutions - Todos los derechos reservados - UNIVERSIDAD AZTECA</p>
+</footer>
+
+</body>
+</html>
